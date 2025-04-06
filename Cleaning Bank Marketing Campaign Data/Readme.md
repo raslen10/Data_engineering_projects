@@ -107,27 +107,35 @@ The cleaned data is structured for PostgreSQL with:
 \copy economics FROM 'economics.csv' DELIMITER ',' CSV HEADER;
 ```
 
-📊 Results Summary
-Dataset	Records	Key Transformations	Output File Size
-Client	41,188	2 boolean conversions, text cleanup	~1.2 MB
-Campaign	41,188	Date creation, 2 booleans	~1.5 MB
-Economics	41,188	Outlier detection, type validation	~0.9 MB
-📝 Key Decisions
-Handling Unknowns: Treated "unknown" values conservatively (as negative/false)
+# 📊 Results Summary
 
-Date Handling: Used fixed year 2022 with robust error handling
+## Dataset Overview
 
-Boolean Conversion: Used 1/0 integers for database compatibility
+| Dataset   | Records | Key Transformations                 | Output File Size |
+|-----------|---------|--------------------------------------|------------------|
+| Client    | 41,188  | 2 boolean conversions, text cleanup | ~1.2 MB          |
+| Campaign  | 41,188  | Date creation, 2 booleans           | ~1.5 MB          |
+| Economics | 41,188  | Outlier detection, type validation  | ~0.9 MB          |
 
-Outlier Treatment: Preserved original economic values after confirming no extreme outliers
+---
 
-🛠 Future Improvements
-Automate the cleaning pipeline for future campaigns
+## 📝 Key Decisions
 
-Add data quality metrics tracking
+- **Handling Unknowns:** Treated `"unknown"` values conservatively (as negative/false)  
+- **Date Handling:** Used fixed year `2022` with robust error handling  
+- **Boolean Conversion:** Used `1/0` integers for database compatibility  
+- **Outlier Treatment:** Preserved original economic values after confirming no extreme outliers
 
-Implement more sophisticated outlier detection
+---
 
-Create database schema migration scripts
+## 🛠 Future Improvements
+
+- Automate the cleaning pipeline for future campaigns  
+- Add data quality metrics tracking  
+- Implement more sophisticated outlier detection  
+- Create database schema migration scripts
+
+---
 
 ✅ This project successfully transformed raw marketing data into clean, analysis-ready datasets while maintaining data integrity and following best practices for database preparation.
+
