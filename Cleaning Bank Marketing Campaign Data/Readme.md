@@ -105,7 +105,7 @@ The cleaned data is structured for PostgreSQL with:
 \copy client FROM 'client.csv' DELIMITER ',' CSV HEADER;
 \copy campaign FROM 'campaign.csv' DELIMITER ',' CSV HEADER;
 \copy economics FROM 'economics.csv' DELIMITER ',' CSV HEADER;
-
+```
 
 📊 Results Summary
 Dataset	Records	Key Transformations	Output File Size
