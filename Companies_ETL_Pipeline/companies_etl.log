@@ -1,0 +1,9 @@
+2025-05-23 11:56:17,606 - INFO - Starting ETL pipeline...
+2025-05-23 11:56:17,808 - INFO - Database companies_db created successfully.
+2025-05-23 11:56:17,808 - INFO - Extracting data from https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue
+2025-05-23 11:56:19,050 - INFO - 10 companies extracted successfully.
+2025-05-23 11:56:19,054 - INFO - Transforming data...
+2025-05-23 11:56:19,064 - INFO - Transformation completed successfully.
+2025-05-23 11:56:19,081 - INFO - MySQL table initialized successfully.
+2025-05-23 11:56:19,116 - INFO - 10 companies loaded into MySQL.
+2025-05-23 11:56:19,117 - INFO - ETL pipeline completed successfully!
