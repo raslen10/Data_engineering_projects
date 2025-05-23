@@ -12,8 +12,8 @@ This project provides an ETL (Extract, Transform, Load) pipeline to scrape data 
 
 1. **Clone the Repository** (if applicable):
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone <[repository-url](https://github.com/raslen10/Data_engineering_projects/tree/main/Companies_ETL_Pipeline)>
+   cd <Companies_ETL_Pipeline>
    ```
 
 2. **Set Up a Virtual Environment** (recommended):
@@ -45,12 +45,12 @@ This project provides an ETL (Extract, Transform, Load) pipeline to scrape data 
    self.db_config = {
        "host": "localhost",
        "database": "companies_db",  # Database name
-       "user": "root",  # Replace with your MySQL user
+       "user": "****",  # Replace with your MySQL user
        "password": "*****",  # Replace with your MySQL password
    }
    ```
    - Replace `"companies_db"` with your desired database name.
-   - Replace `"root"` with your MySQL username.
+   - Replace `"****"` with your MySQL username.
    - Replace `"*****"` with your MySQL password.
 
 2. **Create the Database**:
@@ -111,6 +111,3 @@ The pipeline uses Python's `logging` module to record events:
   - Inspect the `companies_etl.log` file for detailed error messages.
   - Verify the Wikipedia page structure hasn't changed.
 
-## License
-
-This project is licensed under the MIT License.
