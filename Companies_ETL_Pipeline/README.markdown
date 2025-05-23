@@ -10,19 +10,13 @@ This project provides an ETL (Extract, Transform, Load) pipeline to scrape data 
 
 ## Installation
 
-1. **Clone the Repository** (if applicable):
-   ```bash
-   git clone <[repository-url](https://github.com/raslen10/Data_engineering_projects/tree/main/Companies_ETL_Pipeline)>
-   cd <Companies_ETL_Pipeline>
-   ```
-
-2. **Set Up a Virtual Environment** (recommended):
+1. **Set Up a Virtual Environment** (recommended):
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Install Required Libraries**:
+2. **Install Required Libraries**:
    Install the necessary Python packages using pip:
    ```bash
    pip install requests beautifulsoup4 pandas mysql-connector-python
@@ -33,7 +27,7 @@ This project provides an ETL (Extract, Transform, Load) pipeline to scrape data 
    - `pandas`: For data manipulation and transformation.
    - `mysql-connector-python`: For connecting to and interacting with MySQL.
 
-4. **Set Up MySQL**:
+3. **Set Up MySQL**:
    - Ensure MySQL Server is installed and running.
    - Create a MySQL user with appropriate permissions or use an existing user (e.g., `root`).
 
